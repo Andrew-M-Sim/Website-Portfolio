@@ -2,11 +2,152 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Andrew's Website Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- script for dark/light theme -->
+    <script type="text/javascript">
+
+        function toggleTheme() {
+            document.body.classList.toggle("theme");
+            icon = document.getElementById("themeicon");
+            if (document.body.classList.contains("theme")) {
+                icon.src = "website-p-images/sun.png";
+            }
+            else {
+                icon.src = "website-p-images/moon.png";
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <div class="nav_container">
+        <nav>
+            <img src="website-p-images/Andrew-1logo.png" class="logo" alt="Andrew Logo" id="home" class="logo">
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+
+            </ul>
+            <img src="website-p-images/moon.png" id="themeicon" alt="moon icon" onclick="toggleTheme()">
+        </nav>
+    </div>
+
+    <div class="hero_container">
+        <div class="intro">
+            <h1>Hi, my name is <span>Andrew</span> Sim.</h1>
+            <p>I'm currently studying to be a full-stack software engineer to <br />change my career path.</p>
+            <div class="socials">
+
+                <a href="https://www.linkedin.com/home" target="ln">
+                    <img width="37px" src="website-p-images/linkd.png" alt="Linkedin icon link" />
+                </a>
+                <a href="https://github.com/" target="gh">
+                    <img width="50px" src="website-p-images/gith.png" alt="Github icon link" />
+                    <a href="https://www.google.com" target="gm">
+                        <img width="40px" src="website-p-images/gmail.png" alt="Gmail icon link" />
+                    </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <section>
+            <h1 id="about">About Me </h1>
+            <div class="article">
+                <img src="website-p-images/aboutme.png" alt="Cartoon avatar" class="img" />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Adipiscing at in tellus integer feugiat scelerisque. Varius morbi enim nunc
+                    faucibus a pellentesque sit amet porttitor. Nisl suscipit adipiscing bibendum est ultricies integer
+                    quis
+                    auctor elit. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. Nulla facilisi
+                    etiam
+                    dignissim diam quis enim lobortis scelerisque. Cursus euismod quis viverra nibh. Gravida cum sociis
+                    natoque penatibus et magnis dis parturient montes. Leo vel orci porta non pulvinar neque laoreet.
+                    Sed
+                    arcu non odio euismod lacinia. Duis at tellus at urna. Aliquet porttitor lacus luctus accumsan.
+                    Felis
+                    eget nunc lobortis mattis. Malesuada fames ac turpis egestas sed tempus urna. Elementum curabitur
+                    vitae
+                    nunc sed velit.
+                </p>
+                <div class="experience">
+                    <h1>Experience</h1>
+                    <div>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Tools</h2>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>GitHub</li>
+                            <li>Photoshop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- experiences -->
+        </section>
+
+        <section>
+            <h1 id="portfolio">My Portfolio</h1>
+            <h2 class="p1">
+                Portfolio 1
+            </h2>
+            <div class="article">
+
+                <img src="website-p-images/pccoding.png" alt="computer images" class="img">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Nibh venenatis cras sed felis eget velit aliquet
+                    sagittis. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Viverra orci sagittis eu
+                    volutpat odio facilisis mauris sit amet. Iaculis eu non diam phasellus vestibulum lorem sed risus.
+                    Tristique nulla aliquet enim tortor at auctor urna nunc. Penatibus et magnis dis parturient montes.
+                    Sit amet commodo nulla facilisi nullam vehicula ipsum a. Eget sit amet tellus cras adipiscing enim
+                    eu turpis. Platea dictumst vestibulum rhoncus est. Morbi tristique senectus et netus. Et molestie ac
+                    feugiat sed lectus. Donec massa sapien faucibus et molestie ac. Egestas purus viverra accumsan in.
+                    Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Sapien et ligula ullamcorper
+                    malesuada proin libero nunc.
+
+                </p>
+            </div>
+            <div class="article">
+                <h2 class="p2"> Portfolio 2</h2>
+                <img src="website-p-images/binary-code.png" alt="binary image" class="img">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Lectus
+                    magna fringilla urna porttitor. Tempus quam pellentesque nec nam aliquam sem. Sit amet consectetur
+                    adipiscing elit pellentesque habitant morbi tristique senectus. Risus nullam eget felis eget nunc
+                    lobortis mattis aliquam. Amet justo donec enim diam vulputate ut pharetra sit. Scelerisque fermentum
+                    dui faucibus in ornare. Faucibus vitae aliquet nec ullamcorper sit amet. Mi in nulla posuere
+                    sollicitudin aliquam. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Et netus et
+                    malesuada fames ac. Quam quisque id diam vel quam elementum pulvinar. A iaculis at erat pellentesque
+                    adipiscing commodo. Leo in vitae turpis massa. In eu mi bibendum neque egestas congue quisque
+                    egestas. Auctor augue mauris augue neque. Massa tincidunt dui ut ornare lectus sit. Mauris commodo
+                    quis imperdiet massa tincidunt nunc pulvinar. In fermentum posuere urna nec tincidunt praesent.
+
+                </p>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p>&copy; 2023 Andrew's Portfolio Website. All Rights Reserved.</p>
+    </footer>
+
 </body>
+
 
 </html>
